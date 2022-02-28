@@ -1,6 +1,11 @@
 # Changelog
 All changes to the Kameleoon Client Server-Side SDK for Node.js will be documented in this file.
 
+## 2.1.2 - 2022-02-28
+* Improving token fetching
+* Added support of multi-environment for feature flags, Related to [`activateFeature`](https://developers.kameleoon.com/nodejs-sdk.html#activatefeature), [`obtainFeatureVariable`](https://developers.kameleoon.com/nodejs-sdk.html#obtainfeaturevariable)
+
+
 ## 2.1.1 - 2022-02-01
 * Added checking for status of site_code (Enable / Disable). Related to [`activateFeature`](https://developers.kameleoon.com/nodejs-sdk.html#activatefeature) and [`triggerExperiment`](https://developers.kameleoon.com/nodejs-sdk.html#triggerexperiment)
 * Added scheduling functionality for [`activateFeature`](https://developers.kameleoon.com/nodejs-sdk.html#activatefeature)
