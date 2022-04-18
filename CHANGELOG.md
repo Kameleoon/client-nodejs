@@ -1,6 +1,16 @@
 # Changelog
 All changes to the Kameleoon Client Server-Side SDK for Node.js will be documented in this file.
 
+## 2.1.4 - 2022-04-18
+* Added method to obtain a list of feature flags: [`obtainFeatureList`](https://developers.kameleoon.com/nodejs-sdk.html#obtainfeaturelist)
+* Added method to obtain a list of feature flags targeted for specified visitor code: [`obtainFeatureListForVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#obtainfeaturelistforvisitorcode)
+* Added method to obtain a list of experiments: [`obtainExperimentList`](https://developers.kameleoon.com/nodejs-sdk.html#obtainexperimentlist)
+* Added method to obtain a list of experiments targeted for specified visitor code: [`obtainExperimentListForVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#obtainexperimentlistforvisitorcode)
+* Added method to obtain all variables for feature flag: [`obtainFeatureAllVariables`](https://developers.kameleoon.com/nodejs-sdk.html#obtainfeatureallvariables)
+* Added an indication of feature flag (Id, Key) when exception happens. Related to [`activateFeature`](https://developers.kameleoon.com/nodejs-sdk.html#activatefeature), [`obtainFeatureVariable`](https://developers.kameleoon.com/nodejs-sdk.html#obtainfeaturevariable)
+* Added an indication of experiment (Id) when exception happens. Related to [`triggerExperiment`](https://developers.kameleoon.com/nodejs-sdk.html#triggerexperiment)
+
+
 ## 2.1.3 - 2022-04-12
 * Added method for retrieving data from remote source: [`retrieveDataFromRemoteSource`](https://developers.kameleoon.com/nodejs-sdk.html#retrievedatafromremotesource)
 
