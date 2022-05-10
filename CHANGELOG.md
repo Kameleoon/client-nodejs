@@ -1,6 +1,10 @@
 # Changelog
 All changes to the Kameleoon Client Server-Side SDK for Node.js will be documented in this file.
 
+## 2.1.5 - 2022-05-10
+* Added KameleoonData [`Device`](https://developers.kameleoon.com/nodejs-sdk.html#device) data. Possible values are: **PHONE**, **TABLET**, **DESKTOP**. 
+* Removed KameleoonData `Interest`
+
 ## 2.1.4 - 2022-04-18
 * Added method to obtain a list of feature flags: [`obtainFeatureList`](https://developers.kameleoon.com/nodejs-sdk.html#obtainfeaturelist)
 * Added method to obtain a list of feature flags targeted for specified visitor code: [`obtainFeatureListForVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#obtainfeaturelistforvisitorcode)
