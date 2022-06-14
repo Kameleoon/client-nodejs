@@ -1,6 +1,9 @@
 # Changelog
 All changes to the Kameleoon Client Server-Side SDK for Node.js will be documented in this file.
 
+## 2.1.7 - 2022-06-14
+* Fixed an issue when tracking data could be sent twice. Related to: [`triggerExperiment`](https://developers.kameleoon.com/nodejs-sdk.html#triggerexperiment) & [`activateFeature`](https://developers.kameleoon.com/nodejs-sdk.html#activatefeature)
+
 ## 2.1.6 - 2022-05-31
 * Added Support **Experiment** & **Exclusive Campaign** conditions. Related to [`triggerExperiment`](https://developers.kameleoon.com/nodejs-sdk.html#triggerexperiment)
 * Fixed an issue when an user which was already registered with a variation gets new randomly selected variation. Related to [`triggerExperiment`](https://developers.kameleoon.com/nodejs-sdk.html#triggerexperiment)
