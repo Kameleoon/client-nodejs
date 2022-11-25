@@ -1,6 +1,11 @@
 # Changelog
 All changes to the Kameleoon Client Server-Side SDK for Node.js will be documented in this file.
 
+## 3.0.0 - 2022-11-25
+* [`triggerExperiment`](https://developers.kameleoon.com/nodejs-sdk.html#triggerexperiment) and [`activateFeature`](https://developers.kameleoon.com/nodejs-sdk.html#activatefeature) are synchronized methods now.
+* Added support of new feature flag rules.
+* Added possibility to set [`UserAgent`](https://developers.kameleoon.com/nodejs-sdk.html#useragent).
+
 ## 2.1.8 - 2022-07-29
 * Minor bug fixes
 
