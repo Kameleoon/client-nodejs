@@ -1,6 +1,9 @@
 # Changelog
 All changes to the Kameleoon Client Server-Side SDK for Node.js will be documented in this file.
 
+## 3.0.2 - 2022-12-01
+* Minor bug fixing
+
 ## 3.0.1 - 2022-11-25
 * Minor bug fixing
 
