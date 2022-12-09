@@ -1,6 +1,10 @@
 # Changelog
 All changes to the Kameleoon Client Server-Side SDK for Node.js will be documented in this file.
 
+## 3.1.0 - 2022-12-09
+* [`activateFeature`] & [`obtainFeatureVariable`] are deprecated.
+* Renaming of methods: [`obtainVisitorCode`] -> [`getVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#getVisitorCode), [`obtainVariationAssociatedData`] -> [`getVariationAssociatedData`](https://developers.kameleoon.com/nodejs-sdk.html#obtainVariationAssociatedData), [`obtainFeatureAllVariables`] -> [`getFeatureAllVariables`](https://developers.kameleoon.com/nodejs-sdk.html#getFeatureAllVariables), [`obtainExperimentList`] -> [`getExperimentList`](https://developers.kameleoon.com/nodejs-sdk.html#getExperimentList), [`obtainExperimentListForVisitorCode`] -> [`getExperimentListForVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#getExperimentListForVisitorCode), [`obtainFeatureList`] -> [`getFeatureList`](https://developers.kameleoon.com/nodejs-sdk.html#getFeatureList), [`obtainFeatureListForVisitorCode`] -> [`getFeatureListForVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#getFeatureListForVisitorCode). Old methods marked as deprecated and will be removed later.
+
 ## 3.0.3 - 2022-12-01
 * Minor bug fixing for tracking calls
 
