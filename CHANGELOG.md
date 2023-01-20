@@ -1,6 +1,9 @@
 # Changelog
 All changes to the Kameleoon Client Server-Side SDK for Node.js will be documented in this file.
 
+## 3.1.2 - 2023-01-20
+* Removed `blocking` parameter from initilization method
+
 ## 3.1.1 - 2022-12-14
 * Added support of `is among the values` operator for Custom Data
 
