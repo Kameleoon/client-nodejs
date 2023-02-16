@@ -1,6 +1,11 @@
 # Changelog
 All changes to the Kameleoon Client Server-Side SDK for Node.js will be documented in this file.
 
+## 3.2.0 - 2023-02-16
+
+- Added [`initialize`](https://developers.kameleoon.com/nodejs-sdk.html#initialize) method
+- `fs` module is now only imported if the file system configuration is being used
+
 ## 3.1.2 - 2023-01-20
 * Removed `blocking` parameter from initilization method
 
