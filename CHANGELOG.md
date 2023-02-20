@@ -13,8 +13,15 @@ All changes to the Kameleoon Client Server-Side SDK for Node.js will be document
 * Added support of `is among the values` operator for Custom Data
 
 ## 3.1.0 - 2022-12-09
-* [`activateFeature`] & [`obtainFeatureVariable`] are deprecated.
-* Renaming of methods: [`obtainVisitorCode`] -> [`getVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#getVisitorCode), [`obtainVariationAssociatedData`] -> [`getVariationAssociatedData`](https://developers.kameleoon.com/nodejs-sdk.html#obtainVariationAssociatedData), [`obtainFeatureAllVariables`] -> [`getFeatureAllVariables`](https://developers.kameleoon.com/nodejs-sdk.html#getFeatureAllVariables), [`obtainExperimentList`] -> [`getExperimentList`](https://developers.kameleoon.com/nodejs-sdk.html#getExperimentList), [`obtainExperimentListForVisitorCode`] -> [`getExperimentListForVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#getExperimentListForVisitorCode), [`obtainFeatureList`] -> [`getFeatureList`](https://developers.kameleoon.com/nodejs-sdk.html#getFeatureList), [`obtainFeatureListForVisitorCode`] -> [`getFeatureListForVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#getFeatureListForVisitorCode). Old methods marked as deprecated and will be removed later.
+* `activateFeature` & `obtainFeatureVariable` are deprecated.
+* Renaming of methods (old methods marked as deprecated and will be removed later):
+    - `obtainVisitorCode` -> [`getVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#getVisitorCode)
+    - `obtainVariationAssociatedData` -> [`getVariationAssociatedData`](https://developers.kameleoon.com/nodejs-sdk.html#obtainVariationAssociatedData)
+    - `obtainFeatureAllVariables` -> [`getFeatureAllVariables`](https://developers.kameleoon.com/nodejs-sdk.html#getFeatureAllVariables)
+    - `obtainExperimentList` -> [`getExperimentList`](https://developers.kameleoon.com/nodejs-sdk.html#getExperimentList)
+    - `obtainExperimentListForVisitorCode` -> [`getExperimentListForVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#getExperimentListForVisitorCode)
+    - `obtainFeatureList` -> [`getFeatureList`](https://developers.kameleoon.com/nodejs-sdk.html#getFeatureList)
+    - `obtainFeatureListForVisitorCode` -> [`getFeatureListForVisitorCode`](https://developers.kameleoon.com/nodejs-sdk.html#getFeatureListForVisitorCode)
 
 ## 3.0.3 - 2022-12-01
 * Minor bug fixing for tracking calls
@@ -43,7 +50,7 @@ All changes to the Kameleoon Client Server-Side SDK for Node.js will be document
 * Added a new method [`onUpdateConfiguration`](https://developers.kameleoon.com/nodejs-sdk.html#onUpdateConfiguration) to handle events when configuration data is updated in real time.
 
 ## 2.1.5 - 2022-05-10
-* Added KameleoonData [`Device`](https://developers.kameleoon.com/nodejs-sdk.html#device) data. Possible values are: **PHONE**, **TABLET**, **DESKTOP**. 
+* Added KameleoonData [`Device`](https://developers.kameleoon.com/nodejs-sdk.html#device) data. Possible values are: **PHONE**, **TABLET**, **DESKTOP**.
 * Removed KameleoonData `Interest`
 
 ## 2.1.4 - 2022-04-18
