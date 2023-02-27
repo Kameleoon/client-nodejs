@@ -1,6 +1,12 @@
 # Changelog
 All changes to the Kameleoon Client Server-Side SDK for Node.js will be documented in this file.
 
+## 3.3.0 - 2023-02-27
+- Added method:
+    - [`isFeatureActive`](https://developers.kameleoon.com/nodejs-sdk.html#isFeatureActive) (added instead of deprecated method `activateFeature`)
+- Renaming of exceptions:
+    - `NotActivated` -> `NotAllocated`
+
 ## 3.2.0 - 2023-02-16
 
 - Added [`initialize`](https://developers.kameleoon.com/nodejs-sdk.html#initialize) method
