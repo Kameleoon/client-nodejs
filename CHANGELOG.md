@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 2.1.1 (2023-04-18)
+
+
+### Bug fixes
+
+* Visitor code cookie header is now set correctly
+
 # 2.1.0 (2023-04-14)
 
 ### Features
@@ -16,9 +23,6 @@ All notable changes to this project will be documented in this file.
 ### Bug fixes
 
 * `variationId` is undefined when using feature flag related methods
-
-# 2.0.1 (2023-04-05)
-
 
 ### Bug fixes
 
