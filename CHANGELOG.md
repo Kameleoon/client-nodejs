@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 2.1.2 (2023-04-22)
+
+
+### Bug fixes
+
+* core dependency fix 
+
 # 2.1.1 (2023-04-18)
 
 
