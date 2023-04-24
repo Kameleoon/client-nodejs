@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 2.1.3 (2023-04-24)
+
+
+### Bug fixes
+
+* Tracking feature flag rule with variation `off` wasn't displayed on result page
+
 # 2.1.2 (2023-04-22)
 
 
