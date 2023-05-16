@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 2.1.4 (2023-05-16)
+
+
+### Bug fixes
+
+* Cookies now correctly set for Next JS SSR
+
 # 2.1.3 (2023-04-24)
 
 
@@ -16,7 +23,7 @@ All notable changes to this project will be documented in this file.
 
 ### Bug fixes
 
-* core dependency fix 
+* core dependency fix
 
 # 2.1.1 (2023-04-18)
 
@@ -40,19 +47,19 @@ All notable changes to this project will be documented in this file.
 
 ### Bug fixes
 
-* add node-fetch to dependency 
+* add node-fetch to dependency
 
 # 2.0.0 (2023-04-05)
 
 
 ### Features
 
-* Integration of compute edge 
+* Integration of compute edge
 
 # 1.1.0 (2023-03-22)
 
 
-### Features 
+### Features
 
 - License changed from `GPL3.0` to `ISC`
 
