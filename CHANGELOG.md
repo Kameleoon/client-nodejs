@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 2.2.3 (2023-05-24)
+
+
+### Bug fixes
+
+* Fixed issue for sending unique `Nonce` parameter on tracking requests
+
 # 2.2.2 (2023-05-21)
 
 
