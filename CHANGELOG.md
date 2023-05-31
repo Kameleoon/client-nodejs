@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 2.2.4 (2023-05-31)
+
+
+### Bug fixes
+
+* Improve targeting data cleanup interval handling
+
 # 2.2.3 (2023-05-24)
 
 
