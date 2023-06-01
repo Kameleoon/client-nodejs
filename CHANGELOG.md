@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 2.2.5 (2023-06-01)
+
+
+### Bug fixes
+
+* Empty visitor code is no more allowed
+* Incorrect tracking body upon triggering an experiment
+
 # 2.2.4 (2023-05-31)
 
 
