@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 2.4.0 (2023-07-04)
+
+
+### Features
+
+* Deno support
+
 # 2.3.1 (2023-06-30)
 
 
