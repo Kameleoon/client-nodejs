@@ -9,7 +9,13 @@ All notable changes to this project will be documented in this file.
 
 ### Bug fixes
 
-- Typescript `.d.ts` files have proper relative path resolution. 
+- Typescript `.d.ts` files have proper relative path resolution.
+- Unused tracking parameters are no longer sent.
+- Real-time update events now get the latest configuration.
+
+### Features
+
+- Minor optimization for checking [targeting conditions](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#list-of-supported-targeting-conditions) of a segment.
 
 # 2.4.0 (2023-07-04)
 
