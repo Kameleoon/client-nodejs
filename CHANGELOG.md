@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 2.5.0 (2023-07-21)
+
+
+### Bug fixes
+
+- Checks against unsupported conditions are now truthy.
+
+### Features
+
+- `flushData` has been deprecated in favor of [`flush`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#flush).
+
 # 2.4.1 (2023-07-17)
 
 
