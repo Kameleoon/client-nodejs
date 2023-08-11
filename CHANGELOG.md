@@ -4,12 +4,20 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
-# 2.5.0 (2023-07-21)
+# 2.6.0 (2023-08-11)
 
 
 ### Bug fixes
 
-- Checks against unsupported conditions are now truthy.
+* Empty Custom Data is now sending activity tracking event
+
+### Features
+
+* Added [Tracking requests rate limit](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#tracking-rate-limit) capabilities
+* Added [Cross Device Custom Data Synchronization](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#cross-device-custom-data-synchronization) capabilities
+
+# 2.5.0 (2023-07-21)
+
 
 ### Features
 
