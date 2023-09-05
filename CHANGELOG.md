@@ -4,12 +4,26 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 2.6.3 (2023-09-05)
+
+
+### Bug fixes
+
+* `UserAgent` was not exported from SDK
+
 # 2.6.2 (2023-08-31)
 
 
 ### Bug fixes
 
 * `Custom Data Condition` now handles index `0` properly
+# 2.6.3 (2023-09-05)
+
+
+### Bug fixes
+
+* user agent export
+
 * Bumped `node-fetch` version from `2.6.2` to `2.7.0`
 
 # 2.6.1 (2023-08-25)
