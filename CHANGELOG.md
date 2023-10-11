@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 2.7.1 (2023-10-11)
+
+
+### Bug fixes
+
+* Storage data parse overhead optimization
+
 # 2.7.0 (2023-09-25)
 
 
