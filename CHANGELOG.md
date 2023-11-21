@@ -4,6 +4,54 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 3.0.0 (2023-11-16)
+
+
+### Breaking change
+
+* SDK stopped the support of Web Experiments, the following methods were removed:
+  - `getExperiments`
+  - `getVisitorExperiments`
+  - `triggerExperiment`
+* Previously deprecated `flushData` method was removed
+* [`KameleoonClient`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#arguments) constructor parameters now have mandatory `clientId` and `clientSecret` fields
+* [`getRemoteVisitorData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/js-sdk#getremotevisitordata) method parameters was changed to an object with type [`RemoteVisitorDataParamsType`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/js-sdk#parameters-12) that has a new `filters` field
+
+
+### Features
+
+* New method for retrieving multiple feature flag variables - [`getFeatureFlagVariables`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getfeatureflagvariables)
+* [`getRemoteVisitorData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getremotevisitordata) is now capable of retrieving information from up to 25 visits along with some additional visit information configured by new `filters` field
+* [`PageView`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#pageview) data items are now stored by unique URL with timestamps of visits - each visitor can have several `PageView` URLs stored
+* [`Conversion`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#conversion) data items are now stored as a list of conversion for each visitor
+* [Cross Device Synchronization](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#synchronizing-custom-data-across-devices) was improved - [`CustomData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#customdata) with `Visitor` scope is always re-sent with tracking calls allowing seamless synchronization using [`getRemoteVisitorData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getremotevisitordata)
+* [New targeting conditions](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#list-of-supported-targeting-conditions) are now available (some of them may require [`getRemoteVisitorData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getremotevisitordata) pre-loaded data)
+  - `Browser Cookie`
+  - `Application Version`
+  - `Operating System`
+  - `IP Geolocation`
+  - `Segment`
+  - `Target Feature Flag`
+  - `Previous Page`
+  - `Number of Page Views`
+  - `Time since First Visit`
+  - `Time since Last Visit`
+  - `Number of Visits Today`
+  - `Total Number of Visits`
+  - `New or Returning Visitor`
+* New Kameleoon Data types were introduced:
+  - [`ApplicationVersion`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#applicationversion)
+  - [`Cookie`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#cookie)
+  - [`OperatingSystem`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#operatingsystem)
+  - [`GeolocationData`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#geolocationdata)
+
+
+### Bug fixes
+
+* `SDKParameters` type is now correctly exported from SDK
+* SDK Polling re-tries mechanism was optimized - SDK will now try to obtain configuration again during the next poll after 3 failed configuration loading attempts
+* [`onConfigurationUpdate`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#onconfigurationupdate) callback now fires on successful configuration update in storage (previously fired after network configuration retrieval)
+
 # 2.8.1 (2023-10-20)
 
 
