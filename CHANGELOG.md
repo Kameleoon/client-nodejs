@@ -9,7 +9,7 @@ All notable changes to this project will be documented in this file.
 
 ### Breaking change
 
-* SDK stopped the support of Web Experiments, the following methods were removed:
+* The following methods were removed:
   - `getExperiments`
   - `getVisitorExperiments`
   - `triggerExperiment`
