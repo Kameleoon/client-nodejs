@@ -4,12 +4,19 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 3.1.0 (2023-11-24)
+
+### Features
+
+* Added `setLegalConsent` method to determine the types data Kameleoon includes in tracking requests. This helps you adhere to legal and regulatory requirements while responsibly managing visitor data. You can find more information in the [Consent management policy](https://help.kameleoon.com/consent-management-policy).
+* Migration to new CC end-point
+
 # 3.0.0 (2023-11-16)
 
 
 ### Breaking change
 
-* The following methods were removed:
+* SDK stopped the support of Web Experiments, the following methods were removed:
   - `getExperiments`
   - `getVisitorExperiments`
   - `triggerExperiment`
@@ -51,6 +58,7 @@ All notable changes to this project will be documented in this file.
 * `SDKParameters` type is now correctly exported from SDK
 * SDK Polling re-tries mechanism was optimized - SDK will now try to obtain configuration again during the next poll after 3 failed configuration loading attempts
 * [`onConfigurationUpdate`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#onconfigurationupdate) callback now fires on successful configuration update in storage (previously fired after network configuration retrieval)
+
 
 # 2.8.1 (2023-10-20)
 

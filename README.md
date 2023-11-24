@@ -11,6 +11,8 @@ This page describes the most basic `KameleoonClient` configuration, for more in-
 
 - [Installation](#installation)
 - [Configuration](#configuration)
+- [Using KameleoonClient (Recommended)](#using-kameleoonclient-recommended)
+- [Legacy KameleoonUtils Method (Deprecated)](#legacy-kameleoonutils-method-deprecated)
 
 ## Installation
 
@@ -39,7 +41,35 @@ try {
 }
 ```
 
-4. `KameleoonClient` is ready to go!
+## Using KameleoonClient (Recommended)
+
+1. `KameleoonClient` is ready to go! Fetch the visitor code and add Custom Data:
+
+```ts
+const visitorCode = KameleoonClient.getVisitorCode({
+  request: req, // `NodeJS/NextJS/Deno` request object
+  response: res, // `NodeJS/NextJS/Deno` response object
+});
+const customDataIndex = 0;
+
+// -- Add targeting data
+client.addData(visitorCode, new CustomData(customDataIndex, 'my_data'));
+```
+
+2. Check if a feature is active for a visitor:
+
+```ts
+const isMyFeatureActive = client.isFeatureFlagActive(
+  visitorCode,
+  'my_feature_key',
+);
+```
+
+## Legacy KameleoonUtils Method (Deprecated)
+
+> **Note:** The `getVisitorCode` method from `KameleoonUtils` is deprecated. We recommend using `getVisitorCode` from `KameleoonClient` for new implementations, as it correctly handles legal consent requirements.
+
+1. Fetch the visitor code and add Custom Data:
 
 ```ts
 const visitorCode = KameleoonUtils.getVisitorCode({
@@ -51,8 +81,11 @@ const customDataIndex = 0;
 
 // -- Add targeting data
 client.addData(visitorCode, new CustomData(customDataIndex, 'my_data'));
+```
 
-// -- Check if the feature is active for visitor
+2. Check if a feature is active for a visitor:
+
+```ts
 const isMyFeatureActive = client.isFeatureFlagActive(
   visitorCode,
   'my_feature_key',
