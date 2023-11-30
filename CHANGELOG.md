@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 3.2.0 (2023-11-30)
+
+
+### Features
+
+* [CustomData session merging](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#using-custom-data-for-session-merging) abilities for [Kameleoon Cross-device Experimentation](https://developers.kameleoon.com/core-concepts/cross-device-experimentation)
+
 # 3.1.0 (2023-11-24)
 
 ### Features
