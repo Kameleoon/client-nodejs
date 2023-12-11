@@ -67,7 +67,7 @@ const isMyFeatureActive = client.isFeatureFlagActive(
 
 ## Legacy KameleoonUtils Method (Deprecated)
 
-> **Note:** The `getVisitorCode` method from `KameleoonUtils` is deprecated. We recommend using `getVisitorCode` from `KameleoonClient` for new implementations, as it correctly handles legal consent requirements.
+> **Note:** The `getVisitorCode` method from `KameleoonUtils` is deprecated and will be removed in a future release. Use [`getVisitorCode`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#kameleoonclient-getvisitorcode) method from `KameleoonClient` instead.
 
 1. Fetch the visitor code and add Custom Data:
 
