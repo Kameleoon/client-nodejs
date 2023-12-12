@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 3.4.0 (2023-12-12)
+
+
+### Features
+
+* Updated the [getFeatureFlagVariable](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getfeatureflagvariable) method to return an object of type `FeatureFlagVariableType`
+* Enhanced the [getFeatureFlagVariables](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getfeatureflagvariables) method to include the `key` field in its return value.
+
+### Bug fixes
+
+* Custom Data mapping identifier wasn't tracked correctly
+
 # 3.3.0 (2023-12-11)
 
 
