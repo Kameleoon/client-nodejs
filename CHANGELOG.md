@@ -9,7 +9,7 @@ All notable changes to this project will be documented in this file.
 
 ### Bug fixes
 
-* Add nonce property for conversion data and set value on constructor call
+* Fixed a bug where [Conversions](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#conversion) could be erroneously counted twice in specific scenarios.
 
 # 3.4.0 (2023-12-12)
 
