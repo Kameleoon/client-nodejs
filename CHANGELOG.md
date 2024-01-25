@@ -4,12 +4,23 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 3.5.0 (2024-01-18)
+
+
+### Bug fixes
+
+* SDK threw an error reading storage when migrating from older SDK versions
+
+### Features
+
+* Added new SDK `configuration` parameter [`requestTimeout`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/js-sdk/#1-initializing-the-kameleoon-client), which defines maximum time in _milliseconds_ after which any SDK network request will fail
+
 # 3.4.1 (2023-12-15)
 
 
 ### Bug fixes
 
-* Fixed a bug where [Conversions](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#conversion) could be erroneously counted twice in specific scenarios.
+* Add nonce property for conversion data and set value on constructor call
 
 # 3.4.0 (2023-12-12)
 
