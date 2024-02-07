@@ -4,12 +4,19 @@ All notable changes to this project will be documented in this file.
 
 [Project Homepage](https://developers.kameleoon.com/nodejs-sdk.html)
 
+# 3.6.1 (2024-02-07)
+
+
+### Bug fixes
+
+* Tracking wasn't sent if consent is required
+
 # 3.6.0 (2024-02-01)
 
 
 ### Features
 
-* Add environment support to [getClientConfigurationUrl](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#kameleoonutils-getclientconfigurationurl) 
+* Add environment support to [getClientConfigurationUrl](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#kameleoonutils-getclientconfigurationurl)
 
 # 3.5.0 (2024-01-18)
 
@@ -27,7 +34,7 @@ All notable changes to this project will be documented in this file.
 
 ### Bug fixes
 
-* Add nonce property for conversion data and set value on constructor call
+* Fix nonce for `Conversion` data
 
 # 3.4.0 (2023-12-12)
 
@@ -53,10 +60,6 @@ All notable changes to this project will be documented in this file.
 
 * Targeting data cleanup caused `TypeError`
 
-### Refactor
-
-* Migration to Client Configuration API v2.0
-
 # 3.2.0 (2023-11-30)
 
 
@@ -69,7 +72,6 @@ All notable changes to this project will be documented in this file.
 ### Features
 
 * Added `setLegalConsent` method to determine the types data Kameleoon includes in tracking requests. This helps you adhere to legal and regulatory requirements while responsibly managing visitor data. You can find more information in the [Consent management policy](https://help.kameleoon.com/consent-management-policy).
-* Migration to new CC end-point
 
 # 3.0.0 (2023-11-16)
 
