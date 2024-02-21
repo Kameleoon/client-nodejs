@@ -1,5 +1,13 @@
 # Change Log
 
+## 4.0.1
+
+### Patch Changes
+
+- Added support for additional Data API servers across the world for even faster network requests
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@4.0.1
+
 ## 4.0.0
 
 ### Breaking Changes
