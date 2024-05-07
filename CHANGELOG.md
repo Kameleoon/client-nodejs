@@ -1,5 +1,17 @@
 # Change Log
 
+## 4.2.0
+
+### Features
+
+- Added support for a new Kameleoon Visitor Code Manager interface - `IExternalCustomVisitorCodeManager` that allows providing custom visitor code manager with arbitrary `input` and `output` parameters.
+- New method [`getActiveFeatureFlags`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#getactivefeatureflags) for retrieving feature flags that are active for visitor with detailed variation and variables information.
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@4.2.0
+
 ## 4.1.0
 
 ### Features
