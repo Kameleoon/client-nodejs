@@ -1,6 +1,19 @@
 # Change Log
 
-## 4.2.0
+## 4.3.0 (2024-05-24)
+
+### Features
+
+- Added new [`onEvent`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#onevent) method to handle SDK events with a callback.
+- Method [`onConfigurationUpdate`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#onConfigurationUpdate) is now marked as `deprecated` and will be removed in the next major release. Use [`onEvent(EventType.ConfigurationUpdate, callback)`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/js-sdk/#onevent) instead.
+- Added support of range match type for numeric Custom Data values.
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@4.3.0
+
+## 4.2.0 (2024-05-07)
 
 ### Features
 
@@ -12,7 +25,7 @@
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@4.2.0
 
-## 4.1.0
+## 4.1.0 (2024-04-19)
 
 ### Features
 
@@ -30,7 +43,7 @@
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@4.1.0
 
-## 4.0.1
+## 4.0.1 (2024-02-21)
 
 ### Patch Changes
 
@@ -38,7 +51,7 @@
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@4.0.1
 
-## 4.0.0
+## 4.0.0 (2024-02-16)
 
 ### Breaking Changes
 
