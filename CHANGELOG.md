@@ -1,5 +1,22 @@
 # Change Log
 
+## 4.4.0 (2024-06-21)
+
+### Features
+
+- Added new [`networkDomain`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#1-initializing-the-kameleoon-client) parameter in `SDKConfigurationType` for configuring custom network domain for all outgoing requests.
+- [`SDKConfigurationType`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#1-initializing-the-kameleoon-client) parameter `domain` was deprecated and will be removed in the next major version. Instead new `cookieDomain` is available.
+- Added new optional [External Dependency](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#external-dependencies) - [Requester](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#requester) for implementing custom network request handler. The dependency will become mandatory in the next major release, a new package `@kameleoon/nodejs-requester` is available for use in place of `Requester`.
+- Added new `KameleoonUtils` methods:
+  - [`getCookieValue`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getcookievalue) for extracting cookie value from cookie string
+  - [`simulateSuccessRequest`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#simulatesuccessrequest) for mocking successful network requests when implementing custom `Requester`
+- [Integration](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#arguments) parameter is now deprecated and will be removed in the next major release. New [Requester](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#requester) external dependency covers all integration needs.
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@4.4.0
+
 ## 4.3.0 (2024-05-24)
 
 ### Features
@@ -10,7 +27,6 @@
 
 ### Patch Changes
 
-- Removed optional `NextJS` dependency
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@4.3.0
 
@@ -23,6 +39,7 @@
 
 ### Patch Changes
 
+- Removed optional `NextJS` dependency
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@4.2.0
 

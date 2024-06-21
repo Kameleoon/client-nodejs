@@ -30,6 +30,7 @@ This page describes the most basic `KameleoonClient` configuration, for more in-
 import { KameleoonClient } from '@kameleoon/nodejs-sdk';
 import { KameleoonVisitorCodeManager } from '@kameleoon/nodejs-visitor-code-manager';
 import { KameleoonEventSource } from '@kameleoon/nodejs-event-source';
+import { KameleoonRequester } from '@kameleoon/nodejs-requester';
 
 const client = new KameleoonClient({
   siteCode: 'my_site_code',
@@ -40,6 +41,7 @@ const client = new KameleoonClient({
   externals: {
     visitorCodeManager: new KameleoonVisitorCodeManager(),
     eventSource: new KameleoonEventSource(),
+    requester: new KameleoonRequester(),
   },
 });
 ```
@@ -61,10 +63,7 @@ const customDataIndex = 0;
 client.addData(visitorCode, new CustomData(customDataIndex, 'my_data'));
 
 // -- Check if the feature flag is active
-const isActive = client.isFeatureFlagActive(
-  visitorCode,
-  'my_feature_key',
-);
+const isActive = client.isFeatureFlagActive(visitorCode, 'my_feature_key');
 ```
 
 ## External Dependencies
@@ -79,8 +78,10 @@ Here is the list of such dependencies:
   - `@kameleoon/nodejs-visitor-code-manager`
   - `@kameleoon/nextjs-visitor-code-manager`
   - `@kameleoon/deno-visitor-code-manager`
-- `eventSource`_(madatory)_ is responsible for Real Time Updates(Streaming) for SDK, it has one default Kameleoon implementation:
+- `eventSource`_(mandatory)_ is responsible for Real Time Updates(Streaming) for SDK, it has one default Kameleoon implementation:
   - `@kameleoon/nodejs-event-source` (suitable for NodeJS/Deno/NextJS)
+- `requester`_(mandatory)_ is responsible for sending all SDK request, it has one default Kameleoon implementation:
+  - `@kameleoon/nodejs-requester`
 - `storage`_(optional)_ is responsible for storing all SDK related data, it has a built-in implementation in the SDK.
 
 Following is the example implementation for each dependency.
@@ -88,7 +89,11 @@ Following is the example implementation for each dependency.
 ### visitorCodeManager
 
 ```ts
-import { IExternalVisitorCodeManager, GetDataParametersType } from "@kameleoon/nodejs-sdk";
+import {
+  IExternalVisitorCodeManager,
+  GetDataParametersType,
+  KameleoonUtils,
+} from '@kameleoon/nodejs-sdk';
 
 class MyVisitorCodeManager implements IExternalVisitorCodeManager {
   // - Get visitor code from `request` cookie
@@ -99,21 +104,7 @@ class MyVisitorCodeManager implements IExternalVisitorCodeManager {
       return null;
     }
 
-    const cookieEntry = cookieString
-      .split(' ;')
-      .find((keyValue) => {
-        const [cookieKey, cookieValue] = keyValue.split('=');
-
-        return cookieKey === key && cookieValue !== '';
-      });
-
-    if (cookieEntry) {
-      const [_, value] = cookieEntry.split('=');
-
-      return value;
-    }
-
-    return null;
+    return KameleoonUtils.getCookieValue(cookieString, key);
   }
 
   // - Set visitor code to `response` cookie
@@ -139,7 +130,7 @@ class MyVisitorCodeManager implements IExternalVisitorCodeManager {
 ### eventSource
 
 ```ts
-import { IExternalEventSource } from "@kameleoon/nodejs-sdk";
+import { IExternalEventSource } from '@kameleoon/nodejs-sdk';
 
 class MyEventSource implements IExternalEventSource {
   private eventSource?: EventSource;
@@ -167,7 +158,7 @@ class MyEventSource implements IExternalEventSource {
 ### storage
 
 ```ts
-import { IExternalStorage } from "@kameleoon/nodejs-sdk";
+import { IExternalStorage } from '@kameleoon/nodejs-sdk';
 
 const storage = new Map();
 
@@ -186,6 +177,26 @@ class MyStorage<T> implements IExternalStorage<T> {
 
   public write(key: string, data: T): void {
     storage.set(key, data);
+  }
+}
+```
+
+### requester
+
+```ts
+import {
+  RequestType,
+  IExternalRequester,
+  SendRequestParametersType,
+} from '@kameleoon/nodejs-sdk';
+
+class Requester implements IExternalRequester {
+  public async sendRequest({
+    url,
+    parameters,
+  }: SendRequestParametersType<RequestType>) {
+    // - Using built-in `fetch` API (for Node version 18+)
+    return await fetch(url, parameters);
   }
 }
 ```
