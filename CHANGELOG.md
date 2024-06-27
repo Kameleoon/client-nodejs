@@ -1,5 +1,11 @@
 # Change Log
 
+## 4.4.1 (2024-06-27)
+
+### Patch Changes
+
+- Resolved an issue where the custom `externals { requester }` was not applied to the KameleoonClient instance during initialization, causing the SDK to continue using the default one.
+
 ## 4.4.0 (2024-06-21)
 
 ### Features
