@@ -1,5 +1,14 @@
 # Change Log
 
+## 4.4.3 (2024-07-16)
+
+### Patch Changes
+
+- Fixed the issue of `addData` method throwing an error after using `setLegalConsent`
+- [`getVisitorCode`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getvisitorcode) now sets the visitor code to server `response`, custom `output` or Next.js `cookie` object correctly, when the visitor code was initially retrieved from it
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@4.4.2
+
 ## 4.4.2 (2024-07-12)
 
 ### Patch Changes
