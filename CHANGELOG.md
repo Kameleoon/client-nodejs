@@ -1,5 +1,13 @@
 # Change Log
 
+## 4.4.8 (2024-09-09)
+
+### Patch Changes
+
+- It's now possible to create several SDK instances with different site codes
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@4.4.8
+
 ## 4.4.7 (2024-08-15)
 
 ### Patch Changes
