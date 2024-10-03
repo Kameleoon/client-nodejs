@@ -1,5 +1,45 @@
 # Change Log
 
+## 5.0.0 (2024-10-03)
+
+### Breaking Changes
+
+- `isUniqueIdentifier` parameter has been removed from methods [`flush`][flush], [`getRemoteVisitorData`][getremotevisitordata] and [`trackConversion`][trackconversion]
+- Previously deprecated method [`onConfigurationUpdate`][onconfigurationupdate] has been removed from SDKs. Use [`onEvent`][onevent] method with `EventType.ConfigurationUpdate` to achieve the same effect.
+- Previously deprecated field [`domain`][domain] of `SDKConfiguration` has been removed from SDKs. Use [`cookieDomain`][domain] field of `SDKConfiguration` instead.
+- Parameter `text` of `KameleoonResponseType` used in custom [`requester`][requester] implementation is now mandatory, for the vast majority of implementations like `fetch`, `axios` or `node-fetch` it won't require any changes.
+- SDK stopped using `node-fetch` dependency - that leads to external [`requester`][requester] becoming mandatory dependency. To make sure SDK works correctly make sure to install `@kameleoon/nodejs-requester` package or provide your implementation. Use [`sdk-installer`][sdk-installer] for more detailed information.
+- `externalRequestDispatcher` was removed from an SDK - all its functionality can be covered by using custom `requester` implementation.
+- SDK parameters [`integrations`][integrations] was removed along with its field [`externalClientConfiguration`][integrations], use custom [`requester`][requester] with [`RequestType.ClientConfiguration`][requesttype] to provide custom configuration instead.
+- Static method [`KameleoonUtils.getClientConfigurationUrl`][getclientconfigurationurl] was removed - configuration url can be accessed using [`requester`][requester]
+
+### Features
+
+- Added new [`UniqueIdentifier`][uniqueidentifier] data to be used instead of removed `isUniqueIdentifier` parameters in some methods
+- Added new [`SDKConfiguration`][sdkconfiguration] parameter `trackingInterval` to set the interval between SDK tracking network requests in _milliseconds_, default value is 1000, which is also maximum interval, minimum value is 100
+- `FeatureVariableType` returned from the methods obtaining feature flag variables can now have two new `VariableType`s - `VariableType.JS` containing a `string` of JavaScript code and `VariableType.CSS` containing a string with CSS code
+
+### Patch Changes
+
+- [`getEngineTrackingCode`][getenginetrackingcode] method now correctly sets `triggerExperiment` parameter based on variable types
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.0.0
+
+[getenginetrackingcode]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getenginetrackingcode
+[uniqueidentifier]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#uniqueidentifier
+[sdkconfiguration]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#arguments
+[flush]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#flush
+[getremotevisitordata]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getremotevisitordata
+[trackconversion]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#trackconversion
+[requester]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#requester
+[sdk-installer]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#installation
+[onconfigurationupdate]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#onconfigurationupdate
+[onevent]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#onevent
+[domain]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#configuration-parameters
+[integrations]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#integration-with-edge-providers
+[requesttype]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#parameters-1
+[getclientconfigurationurl]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getclientconfigurationurl
+
 ## 4.4.8 (2024-09-09)
 
 ### Patch Changes
