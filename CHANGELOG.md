@@ -18,6 +18,7 @@
 - Added new [`UniqueIdentifier`][uniqueidentifier] data to be used instead of removed `isUniqueIdentifier` parameters in some methods
 - Added new [`SDKConfiguration`][sdkconfiguration] parameter `trackingInterval` to set the interval between SDK tracking network requests in _milliseconds_, default value is 1000, which is also maximum interval, minimum value is 100
 - `FeatureVariableType` returned from the methods obtaining feature flag variables can now have two new `VariableType`s - `VariableType.JS` containing a `string` of JavaScript code and `VariableType.CSS` containing a string with CSS code
+- Added [`compatibility`][domain] SDK parameter to set the compatibility mode for the SDK, default value is `Compatibility.Node16`, it can also be set to `Compatibility.Node14` or `Compatibility.Node12.
 
 ### Patch Changes
 
