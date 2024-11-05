@@ -1,5 +1,16 @@
 # Change Log
 
+## 5.0.1 (2024-11-05)
+
+### Patch Changes
+
+- Fixed an issue with the [`Page URL`][Targeting Conditions] and [`Page Title`][Targeting Conditions] targeting conditions, where the condition evaluated all previously visited URLs in the session instead of only the current URL, corresponding to the latest added `PageView`
+NOTE: This change may impact your existing targeting. Please review your targeting conditions to ensure accuracy.
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.0.1
+
+[Targeting Conditions]: https://developers.kameleoon.com/feature-management-and-experimentation/using-visit-history-in-feature-flags-and-experiments#benefits-of-calling-getremotevisitordata
+
 ## 5.0.0 (2024-10-03)
 
 ### Breaking Changes
