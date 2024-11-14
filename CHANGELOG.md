@@ -1,5 +1,49 @@
 # Change Log
 
+## 5.1.0 (2024-11-14)
+
+### Features
+
+- Enhanced top-level domain validation within the SDK. The implementation now includes automatic trimming of extraneous symbols.
+- Enhanced [`logging`][logging]:
+  - Introduced [`log levels`][loglevels]:
+    - `None`
+    - `Error`
+    - `Warning`
+    - `Info`
+    - `Debug`
+  - Added support for [`custom logger`][customlogger] implementations.
+- Introduced new evaluation methods for clarity and improved efficiency when working with the SDK:
+  - [`getVariation`][getVariation]
+  - [`getVariations`][getVariations]
+- Introduced methods replace the deprecated ones:
+  - [`getFeatureFlags`][getFeatureFlags]
+  - [`getVisitorFeatureFlags`][getVisitorFeatureFlags]
+  - [`getActiveFeatureFlags`][getActiveFeatureFlags]
+  - [`getFeatureFlagVariationKey`][getFeatureFlagVariationKey]
+  - [`getFeatureFlagVariable`][getFeatureFlagVariable]
+  - [`getFeatureFlagVariables`][getFeatureFlagVariables]
+- A new version of the [`isFeatureFlagActive`][isFeatureFlagActive] method now has a new overload, which contains an optional `track` parameter for managing the assigned variation tracking (default: `true`).
+
+### Patch Changes
+
+- [`UniqueIdentifier`][uniqueidentifier] data is now correctly exported from the SDK
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.1.0
+
+[logging]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#logging
+[loglevels]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#log-levels
+[customlogger]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#custom-handling-of-logs
+[getVariation]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getvariation
+[getVariations]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getvariations
+[getFeatureFlags]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getfeatureflags
+[getVisitorFeatureFlags]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getvisitorfeatureflags
+[getActiveFeatureFlags]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getactivefeatureflags
+[getFeatureFlagVariationKey]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getfeatureflagvariationkey
+[getFeatureFlagVariable]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getfeatureflagvariable
+[getFeatureFlagVariables]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getfeatureflagvariables
+[isFeatureFlagActive]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#isfeatureflagactive
+
 ## 5.0.2 (2024-11-08)
 
 ### Patch Changes
