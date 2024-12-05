@@ -1,5 +1,16 @@
 # Change Log
 
+## 5.1.2 (2024-12-05)
+
+### Patch Changes
+
+- Resolved an issue that caused server slowdowns when handling large numbers of unique visitors.
+- Resolved an issue where setting the [`DEBUG`][loglevels] log level could cause unexpected crashes.
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.1.2
+
+[loglevels]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#log-levels
+
 ## 5.1.1
 
 ### Patch Changes
