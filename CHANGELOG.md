@@ -1,6 +1,6 @@
 # Change Log
 
-## 5.1.3
+## 5.1.3 (2024-12-06)
 
 ### Patch Changes
 
@@ -19,7 +19,7 @@
 
 [loglevels]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#log-levels
 
-## 5.1.1
+## 5.1.1 (2024-12-04)
 
 ### Patch Changes
 
