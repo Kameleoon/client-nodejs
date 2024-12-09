@@ -1,5 +1,22 @@
 # Change Log
 
+## 5.2.0 (2024-12-09)
+
+### Features
+
+- Added support for **simulated** variations.
+- Added the [`setForcedVariation()`][setForcedVariation] method. This method allows explicitly setting a forced variation for a visitor, which will be applied during experiment evaluation.
+
+### Patch Changes
+
+- Resolved an issue where the validation of [cookie domains][cookieDomain] for `localhost` resulted in incorrect failures. The SDK now accepts the provided domain without modification if it is deemed invalid and logs an [error][logLevels] to notify you of any issues with the specified domain.
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.2.0
+
+[setForcedVariation]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#setforcedvariation
+[cookieDomain]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#configuration-parameters
+[logLevels]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#log-levels
+
 ## 5.1.3 (2024-12-06)
 
 ### Patch Changes
@@ -19,7 +36,7 @@
 
 [loglevels]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#log-levels
 
-## 5.1.1 (2024-12-04)
+## 5.1.1
 
 ### Patch Changes
 
