@@ -1,5 +1,23 @@
 # Change Log
 
+## 5.3.0 (2025-01-17)
+
+### Features
+
+- Introduced a new `visitorCode` parameter to [`RemoteVisitorDataFilter`][getRemoteVisitorData]. This parameter determines whether to use the `visitorCode` from the most recent previous visit instead of the current `visitorCode`. When enabled, this feature allows visitor exposure to be based on the retrieved `visitorCode`, facilitating [cross-device reconciliation][CrossDevice]. Default value of the parameter is `true`.
+- The mapping identifier is now persistent within a visitor session, ensuring that the assigned variation for a visitor remains unchanged when [merging sessions][mergingSessions] between anonymous and registered users.
+- Added support for additional Data API servers worldwide, enabling faster network requests when the [`networkDomain`][configurationParameters] is manually configured.
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.3.0
+
+[CrossDevice]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#cross-device-experimentation
+[getRemoteVisitorData]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getremotevisitordata
+[mergingSessions]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#synchronizing-custom-data-across-devices
+[configurationParameters]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#configuration-parameters
+
 ## 5.2.3 (2024-12-25)
 
 ### Patch Changes
