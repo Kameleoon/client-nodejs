@@ -1,6 +1,22 @@
 # Change Log
 
-## 5.4.0 (2025-01-17)
+## 5.5.0 (2025-02-10)
+
+### Features
+
+- Added SDK support for **holdout experiments**. Visitors assigned to a holdout experiment are excluded from all other rollouts and experiments, and consistently receive the default variation. For visitors not in a holdout experiment, the standard evaluation process applies, allowing them to be evaluated for all feature flags as usual. Platform-wide release expected in February 2025.
+- Introduced a new `personalization` parameter to [`RemoteVisitorDataFilter`][getRemoteVisitorData]. Default value of the parameter is `false`.
+- The following targeting conditions are now supported:
+  - Exclusive Campaign
+  - Experiment
+  - Personalization
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.5.0
+
+## 5.4.0 (2025-01-20)
 
 ### Features
 
