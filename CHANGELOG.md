@@ -1,5 +1,17 @@
 # Change Log
 
+## 5.6.0 (2025-02-26)
+
+### Features
+
+- Added SDK support for **Mutually Exclusive Groups**. When feature flags are grouped into a **Mutually Exclusive Group**, only one flag in the group will be evaluated at a time. All other flags in the group will automatically return their default variation.
+
+### Patch Changes
+
+- Fixed validation for the [`networkDomain`][configurationParameters] parameter.
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.6.0
+
 ## 5.5.0 (2025-02-10)
 
 ### Features
