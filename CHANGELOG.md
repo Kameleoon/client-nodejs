@@ -4,7 +4,7 @@
 
 ### Features
 
-- Reduced the number of technical requests to Data API servers to enhance performance and minimize the risk of [Too Many Requests](https://developers.kameleoon.com/apis/data-api-rest/all-endpoints/post-visit-events/) errors
+- Reduced the number of technical requests to Data API servers to enhance performance and minimize the risk of [Too Many Requests](https://developers.kameleoon.com/apis/data-api-rest/overview/#rate-limits) errors
 
 ### Patch Changes
 
