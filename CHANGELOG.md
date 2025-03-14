@@ -1,10 +1,21 @@
 # Change Log
 
+## 5.7.1 (2025-03-14)
+
+### Patch Changes
+
+- Fixed the evaluation of the targeting condition for [**New or Returning Visitors**](https://developers.kameleoon.com/feature-management-and-experimentation/using-visit-history-in-feature-flags-and-experiments/#targeting-conditions-requiring-getremotevisitordata).
+- Removed incorrect logging for the [`CustomData`](CustomData) condition when using the **has not been defined yet** operator.
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.7.1
+
+[CustomData]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#customdata
+
 ## 5.7.0 (2025-03-12)
 
 ### Features
 
-- Reduced the number of technical requests to Data API servers to enhance performance and minimize the risk of [Too Many Requests](https://developers.kameleoon.com/apis/data-api-rest/overview/#rate-limits) errors
+- Reduced the number of technical requests to Data API servers to enhance performance and minimize the risk of [Too Many Requests](https://developers.kameleoon.com/apis/data-api-rest/all-endpoints/post-visit-events/) errors
 
 ### Patch Changes
 
