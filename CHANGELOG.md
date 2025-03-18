@@ -1,10 +1,23 @@
 # Change Log
 
+## 5.8.0 (2025-03-18)
+
+### Features
+
+- Added support for Contextual Bandit evaluations. Calling [`getRemoteVisitorData`][getRemoteVisitorData] with the `cbs=true` flag is required for this feature to function correctly. Platform-wide release expected in March 2025.
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.8.0
+
+[getRemoteVisitorData]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#getremotevisitordata
+
 ## 5.7.1 (2025-03-14)
 
 ### Patch Changes
 
-- Fixed the evaluation of the targeting condition for [New or Returning Visitors](https://developers.kameleoon.com/feature-management-and-experimentation/using-visit-history-in-feature-flags-and-experiments/#targeting-conditions-requiring-getremotevisitordata).
+- Fixed the evaluation of the targeting condition for [**New or Returning Visitors**](https://developers.kameleoon.com/feature-management-and-experimentation/using-visit-history-in-feature-flags-and-experiments/#targeting-conditions-requiring-getremotevisitordata).
 - Removed incorrect logging for the [`CustomData`](CustomData) condition when using the **has not been defined yet** operator.
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@5.7.1
