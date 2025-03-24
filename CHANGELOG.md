@@ -1,5 +1,20 @@
 # Change Log
 
+## 5.9.0 (2025-03-24)
+
+### Features
+
+- Added new optional parameters `negative` and `metadata` to the [`trackConversion`](trackConversion) method.
+- Added new optional parameter `metadata` to the [`Conversion`](Conversion) data constructor.
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.9.0
+
+[trackConversion]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#trackconversion
+[Conversion]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#conversion
+
 ## 5.8.0 (2025-03-18)
 
 ### Features
