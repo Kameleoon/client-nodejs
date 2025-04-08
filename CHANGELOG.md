@@ -1,5 +1,13 @@
 # Change Log
 
+## 5.9.1 (2025-04-08)
+
+### Patch Changes
+
+- Changed the order in which **conversion** and **experiment** events are sent. This may lead to more accurate **visit**-level experiment reporting.
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.9.1
+
 ## 5.9.0 (2025-03-24)
 
 ### Features
