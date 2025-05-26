@@ -1,5 +1,16 @@
 # Change Log
 
+## 5.10.0 (2025-05-26)
+
+### Features
+
+- Added support for a **New**/**Returning** visitor breakdown filter in reports (requires calling [`getRemoteVisitorData`][getRemoteVisitorData]).
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.10.0
+
 ## 5.9.2 (2025-05-15)
 
 ### Patch Changes
