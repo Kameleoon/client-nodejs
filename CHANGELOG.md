@@ -1,5 +1,13 @@
 # Change Log
 
+## 5.10.1 (2025-06-26)
+
+### Patch Changes
+
+- Stability and performance improvements
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.10.1
+
 ## 5.10.0 (2025-05-26)
 
 ### Features
