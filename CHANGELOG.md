@@ -1,5 +1,19 @@
 # Change Log
 
+## 5.13.0 (2025-07-23)
+
+### Features
+
+- Added the [`evaluateAudiences`][evaluateAudiences] method. This method iterates over all Audiences Explorer segments, evaluates each one, and tracks the segments for which the visitor is targeted using the [`TARGETINGSEGMENT`](https://developers.kameleoon.com/apis/data-api-rest/all-endpoints/post-visit-events/) event.
+
+### Patch Changes
+
+- Fixed an issue where `defaultDataFile` loaded configuration incorrectly when using the new [v3 data file format](sdk-config.kameleoon.eu/v3/<sitecode>).
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.13.0
+
+[evaluateAudiences]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#evaluateaudiences
+
 ## 5.12.1 (2025-07-11)
 
 ### Patch Changes
