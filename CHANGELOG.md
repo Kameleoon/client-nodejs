@@ -1,5 +1,16 @@
 # Change Log
 
+## 5.14.2 (2025-08-01)
+
+### Patch Changes
+
+- Fixed an issue where [`setLegalConsent()`][setLegalConsent] automatically triggered [`flush()`][flush], which could cause extra latency in serverless or edge environments (e.g., **Lambda@Edge**). It now requires an explicit `flush()`, giving developers full control over data submission.
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.14.2
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ## 5.14.1 (2025-07-30)
 
 ### Patch Changes
@@ -7,6 +18,9 @@
 - Improved error logging when parsing [`defaultDataFile`](defaultDataFile) - now provides more informative messages for easier debugging.
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@5.14.1
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 [defaultDataFile]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#configuration-parameters
 
