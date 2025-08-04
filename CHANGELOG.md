@@ -1,5 +1,14 @@
 # Change Log
 
+## 5.14.3 (2025-08-04)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
+### Patch Changes
+
+- Fixed the missing **SDK version** parameter in the bundle, which caused incorrect tracking URLs and prevented proper evaluation of the [SDK Language](https://help.kameleoon.com/target-groups-of-users-with-rules) condition.
+
 ## 5.14.2 (2025-08-01)
 
 > [!WARNING]
@@ -15,7 +24,6 @@
 
 > [!WARNING]
 > If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
-
 
 ### Patch Changes
 
