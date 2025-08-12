@@ -1,5 +1,16 @@
 # Change Log
 
+## 5.14.4 (2025-08-12)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
+### Patch Changes
+
+- Fixed an issue where [`Cookie`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#cookie) would throw an exception when parsing from a string if the cookie value was empty.
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.14.3
+
 ## 5.14.3 (2025-08-04)
 
 > [!WARNING]
