@@ -1,5 +1,16 @@
 # Change Log
 
+## 5.14.5 (2025-08-13)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
+### Patch Changes
+
+- Fixed an issue where using [`getRemoteVisitorData`][getRemoteVisitorData] with `personalization=true` or [`evaluateAudiences`][evaluateAudiences] could cause a visitor’s targeting data to be unexpectedly removed from storage.
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.14.4
+
 ## 5.14.4 (2025-08-12)
 
 > [!WARNING]
