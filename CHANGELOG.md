@@ -1,5 +1,16 @@
 # Change Log
 
+## 5.14.6 (2025-08-20)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
+### Patch Changes
+
+- Corrected the logic for sending tracking data to comply with GDPR requirements.
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.14.5
+
 ## 5.14.5 (2025-08-13)
 
 > [!WARNING]
