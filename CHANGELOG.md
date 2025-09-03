@@ -1,5 +1,14 @@
 # Change Log
 
+## 5.15.1 (2025-09-03)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
+### Patch Changes
+
+- Fixed an issue where the generated TypeScript declaration files (.d.ts) referenced `src/...` paths instead of package exports, which caused type errors in projects using the package.
+
 ## 5.15.0 (2025-09-01)
 
 > [!WARNING]
