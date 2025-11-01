@@ -16,7 +16,7 @@
 > [!WARNING]
 > If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
-### Minor Changes
+### Features
 
 - Introduced a new [`getDataFile`](getDataFile) method. This method returns the current SDK configuration (also known as the **data file**) used for evaluation and targeting. It is **not** intended for production use to fetch variations for every feature flag in the returned list, as it is not optimized for performance. For that purpose, use [`getVariations`](getVariations) instead. `getDataFile` is mainly useful for debugging or QA, for example to let internal users manually select a variant for a specific feature flag in production.
 
