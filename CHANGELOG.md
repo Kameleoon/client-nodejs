@@ -1,5 +1,19 @@
 # Change Log
 
+## 5.17.0 (2025-12-17)
+
+### Features
+
+- Fixed an issue where **[Kameleoon Data](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#data-types)** was retained beyond the configured **[`targetingDataCleanupInterval`](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#configuration-parameters)** if the **[Data API](https://developers.kameleoon.com/apis/data-api-rest/all-endpoints/post-visit-events/)** encountered internal errors. Expired data is now reliably removed in accordance with the cleanup interval.
+- Updated evaluation and tracking logic to comply with GDPR requirements when consent is not given:
+    - If behavior is **partially blocked**, the default variation will be returned.
+    - If behavior is **completely blocked**, an exception will be thrown.
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.17.0
+
 ## 5.16.1 (2025-10-23)
 
 > [!WARNING]
