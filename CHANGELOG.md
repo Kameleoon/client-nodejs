@@ -2,6 +2,9 @@
 
 ## 5.17.1 (2025-12-24)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Patch Changes
 
 - Stability and performance improvements
@@ -9,6 +12,9 @@
   - @kameleoon/javascript-sdk-core@5.17.1
 
 ## 5.17.0 (2025-12-17)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Features
 
