@@ -632,6 +632,7 @@
 
 ### Patch Changes
 
+- Removed optional `NextJS` dependency
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@4.3.0
 
