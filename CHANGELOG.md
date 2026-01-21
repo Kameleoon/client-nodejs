@@ -1,5 +1,19 @@
 # Change Log
 
+## 5.18.0 (2026-01-21)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
+### Features
+
+- Introduced a new SDK build variant compatible with edge runtimes and modern browser-based environments.
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.17.2
+
 ## 5.17.1 (2025-12-24)
 
 > [!WARNING]
