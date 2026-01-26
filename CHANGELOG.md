@@ -1,5 +1,14 @@
 # Change Log
 
+## 5.18.1 (2026-01-26)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
+### Patch Changes
+
+- Added explicit `types` export to the package `exports` map so TypeScript can correctly locate declaration files.
+
 ## 5.18.0 (2026-01-21)
 
 > [!WARNING]
