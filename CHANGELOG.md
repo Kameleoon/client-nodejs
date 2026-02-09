@@ -1,5 +1,19 @@
 # Change Log
 
+## 5.18.2 (2026-02-09)
+
+### Patch Changes
+
+- Fixed an issue where access token doesn't apply for requests performing for tracking methods which caused 429 status code (many requests) due over limitting for methods:
+  - [`getRemoteVisitorData`](getRemoteVisitorData)
+  - [`getRemoteData`](getRemoteData)
+  - [`getVisitorWarehouseAudience`](getVisitorWarehouseAudience)
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.17.3
+
+[getRemoteData]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#getremotedata
+[getVisitorWarehouseAudience]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#getvisitorwarehouseaudience
+
 ## 5.18.1 (2026-01-26)
 
 > [!WARNING]
