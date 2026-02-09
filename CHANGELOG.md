@@ -2,12 +2,15 @@
 
 ## 5.18.2 (2026-02-09)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Patch Changes
 
 - Fixed an issue where access token doesn't apply for requests performing for tracking methods which caused 429 status code (many requests) due over limitting for methods:
-  - [`getRemoteVisitorData`](getRemoteVisitorData)
-  - [`getRemoteData`](getRemoteData)
-  - [`getVisitorWarehouseAudience`](getVisitorWarehouseAudience)
+  - [`getRemoteVisitorData`][getRemoteVisitorData]
+  - [`getRemoteData`][getRemoteData]
+  - [`getVisitorWarehouseAudience`][getVisitorWarehouseAudience]
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@5.17.3
 
