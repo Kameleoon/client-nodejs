@@ -2,19 +2,25 @@
 
 ## 5.19.0 (2026-02-13)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Features
 
 - Updated the allowed range for the [`trackingInterval`][configurationParameters]. The new range is from **`1000` ms** (default) to **`5000` ms**, allowing a reduction in the number of tracking requests.
 - Introduced a new `track` parameter for [`addData`][addData]. When set to `false`, the data is stored locally and used only for targeting evaluation; it is not sent to the Data API, helping to prevent duplicate data from being recorded. The default value is `true`. This behavior is consistent with the `track` parameter used in evaluation methods such as [`getVariation`][getVariation].
-
-[configurationParameters](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#configuration-parameters)
 
 ### Patch Changes
 
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@5.18.0
 
+[configurationParameters]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#configuration-parameters
+
 ## 5.18.2 (2026-02-09)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Patch Changes
 
