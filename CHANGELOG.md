@@ -1,5 +1,20 @@
 # Change Log
 
+## 5.21.0 (2026-03-19)
+
+### Features
+- Introduced a new [`refreshDataFileIfStale()`][refreshDataFileIfStale] method to refresh the SDK configuration (data file) only when it becomes stale.
+  - **Useful for short-lived runtimes (e.g., edge environments like Cloudflare Workers). Not recommended for typical long-lived Node.js runtimes, where automatic updates are already handled**.
+  - Skips update requests if the configuration is still fresh within the defined [`updateInterval`][configurationParameters].
+  - Returns a boolean indicating whether a refresh request was performed.
+
+[refreshDataFileIfStale]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk/#refreshdatafileifstale
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.20.0
+
 ## 5.20.0 (2026-03-04)
 
 ### Features
