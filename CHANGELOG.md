@@ -2,6 +2,10 @@
 
 ## 5.22.0 (2026-03-23)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
+
 ### Features
 
 - Added support for variation simulation when feature flags are **inactive (OFF state)** across the following methods:
@@ -22,6 +26,10 @@
 
 ## 5.21.0 (2026-03-19)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
+
 ### Features
 
 - Introduced a new [`refreshDataFileIfStale()`][refreshDataFileIfStale] method to refresh the SDK configuration (data file) only when it becomes stale.
@@ -38,6 +46,10 @@
 
 ## 5.20.0 (2026-03-04)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
+
 ### Features
 
 - Introduced a new [`flushInstant`][flush] method — an asynchronous version of `flush` that returns `Promise<void>` and can be awaited:
@@ -50,6 +62,10 @@
   - @kameleoon/javascript-sdk-core@5.19.0
 
 ## 5.19.0 (2026-02-13)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 
 ### Features
 
@@ -64,6 +80,9 @@
   - @kameleoon/javascript-sdk-core@5.18.0
 
 ## 5.18.2 (2026-02-09)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Patch Changes
 
