@@ -5,7 +5,7 @@
 Kameleoon NodeJS SDK is used to work with Kameleoon Feature Flags and Experiments using native NodeJS api.
 Integration of this SDK on server is easy, and its footprint is low.
 
-This page describes the most basic `KameleoonClient` configuration, for more in-depth review of all the methods and configuration options follow [Official Kameleoon Documentation](https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk)
+This page describes the most basic `KameleoonClient` configuration, for more in-depth review of all the methods and configuration options follow [Official Kameleoon Documentation](https://developers.kameleoon.com/nodejs-sdk.html)
 
 ## Contents
 
