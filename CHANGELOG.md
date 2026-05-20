@@ -1,5 +1,14 @@
 # Change Log
 
+## 5.26.1 (2026-05-20)
+
+### Patch Changes
+
+- Fixed an issue in [`refreshDataFileIfStale()`][refreshDataFileIfStale] where the method cached and returned a `Promise` created during the initial call, triggering the **Cloudflare** warning:
+  > `A promise was resolved or rejected from a different request context than the one it was created in.`
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.25.1
+
 ## 5.26.0 (2026-05-13)
 
 ### Features
