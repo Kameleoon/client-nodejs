@@ -258,6 +258,7 @@
 ### Patch Changes
 
 - Fixed an issue where using [`getRemoteVisitorData`][getRemoteVisitorData] with `personalization=true` or [`evaluateAudiences`][evaluateAudiences] could cause a visitor’s targeting data to be unexpectedly removed from storage.
+- Fixed an issue where the SDK could incorrectly evaluate the **Kameleoon Segment** targeting condition as `false`.
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@5.14.4
 
