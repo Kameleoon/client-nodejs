@@ -1,5 +1,15 @@
 # Change Log
 
+## 5.26.2 (2026-07-10)
+
+### Patch Changes
+
+- Fixed excessive memory growth caused by tracking requests repeatedly failing with `429` errors (e.g. during a prolonged tracking outage) from [Data API](https://developers.kameleoon.com/apis/data-api-rest/all-endpoints/).
+- Reduced the maximum tracking request body size from `10 MB` to `2.5 MB` to lower peak memory usage and avoid oversized requests.
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.25.2
+
 ## 5.26.1 (2026-05-20)
 
 ### Patch Changes
@@ -258,7 +268,6 @@
 ### Patch Changes
 
 - Fixed an issue where using [`getRemoteVisitorData`][getRemoteVisitorData] with `personalization=true` or [`evaluateAudiences`][evaluateAudiences] could cause a visitor’s targeting data to be unexpectedly removed from storage.
-- Fixed an issue where the SDK could incorrectly evaluate the **Kameleoon Segment** targeting condition as `false`.
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@5.14.4
 
