@@ -2,6 +2,9 @@
 
 ## 5.26.2 (2026-07-10)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Patch Changes
 
 - Fixed excessive memory growth caused by tracking requests repeatedly failing with `429` errors (e.g. during a prolonged tracking outage) from [Data API](https://developers.kameleoon.com/apis/data-api-rest/all-endpoints/).
@@ -12,6 +15,9 @@
 
 ## 5.26.1 (2026-05-20)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Patch Changes
 
 - Fixed an issue in [`refreshDataFileIfStale()`][refreshDataFileIfStale] where the method cached and returned a `Promise` created during the initial call, triggering the **Cloudflare** warning:
@@ -21,12 +27,18 @@
 
 ## 5.26.0 (2026-05-13)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Features
 
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@5.25.0
 
 ## 5.25.0 (2026-05-07)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Features
 
@@ -38,6 +50,9 @@
   - @kameleoon/javascript-sdk-core@5.24.0
 
 ## 5.24.0 (2026-05-05)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Features
 
@@ -56,6 +71,9 @@
 
 ## 5.23.0 (2026-04-23)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Features
 
 - Improved the performance of the [`getDataFile()`](getDataFile) method. It now returns a cached [`DataFile`](DataFile) instance that is refreshed whenever the SDK configuration is updated.
@@ -71,6 +89,9 @@
   - @kameleoon/javascript-sdk-core@5.22.0
 
 ## 5.22.0 (2026-03-23)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Features
 
@@ -92,6 +113,9 @@
 
 ## 5.21.0 (2026-03-19)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Features
 
 - Introduced a new [`refreshDataFileIfStale()`][refreshDataFileIfStale] method to refresh the SDK configuration (data file) only when it becomes stale.
@@ -108,6 +132,9 @@
 
 ## 5.20.0 (2026-03-04)
 
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+
 ### Features
 
 - Introduced a new [`flushInstant`][flush] method — an asynchronous version of `flush` that returns `Promise<void>` and can be awaited:
@@ -120,6 +147,9 @@
   - @kameleoon/javascript-sdk-core@5.19.0
 
 ## 5.19.0 (2026-02-13)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Features
 
@@ -134,6 +164,9 @@
   - @kameleoon/javascript-sdk-core@5.18.0
 
 ## 5.18.2 (2026-02-09)
+
+> [!WARNING]
+> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Patch Changes
 
