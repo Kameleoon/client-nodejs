@@ -1,9 +1,26 @@
 # Change Log
 
-## 5.26.2 (2026-07-10)
+## 5.27.0 (2026-08-24)
 
-> [!WARNING]
-> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
+### Features
+
+- Added support for SDK event handlers through the new [`setEventHandler`][setEventHandler] method:
+  - `EventType.DataFileUpdate` notifies when the SDK data file (configuration) is updated with [polling](https://docs.kameleoon.com/developer-docs/feature-experimentation/technical-reference/technical-considerations#polling-default) or [streaming](https://docs.kameleoon.com/developer-docs/feature-experimentation/technical-reference/technical-considerations#streaming-premium-option) modes.
+  - `EventType.HttpRequest` notifies when SDK HTTP requests complete successfully or fail.
+  - HTTP request events include the request type, HTTP status or failure details, and request duration.
+  - Passing `null` to `setEventHandler` clears the handler for the selected event type.
+- The [`onEvent`][onEvent] method and the `EventType.ConfigurationUpdate` event type have been deprecated in favor of `setEventHandler` with the `EventType.DataFileUpdate` event type.
+
+[setEventHandler]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#seteventhandler
+[onEvent]: https://developers.kameleoon.com/feature-management-and-experimentation/web-sdks/nodejs-sdk#onevent
+
+### Patch Changes
+
+- Updated dependencies
+  - @kameleoon/javascript-sdk-core@5.26.0
+- Targeting conditions of a type unsupported by the SDK are now evaluated as `false` instead of `true`, so visitors are no longer targeted by conditions the SDK cannot evaluate.
+
+## 5.26.2 (2026-07-10)
 
 ### Patch Changes
 
@@ -15,9 +32,6 @@
 
 ## 5.26.1 (2026-05-20)
 
-> [!WARNING]
-> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
-
 ### Patch Changes
 
 - Fixed an issue in [`refreshDataFileIfStale()`][refreshDataFileIfStale] where the method cached and returned a `Promise` created during the initial call, triggering the **Cloudflare** warning:
@@ -27,18 +41,12 @@
 
 ## 5.26.0 (2026-05-13)
 
-> [!WARNING]
-> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
-
 ### Features
 
 - Updated dependencies
   - @kameleoon/javascript-sdk-core@5.25.0
 
 ## 5.25.0 (2026-05-07)
-
-> [!WARNING]
-> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Features
 
@@ -50,9 +58,6 @@
   - @kameleoon/javascript-sdk-core@5.24.0
 
 ## 5.24.0 (2026-05-05)
-
-> [!WARNING]
-> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Features
 
@@ -71,9 +76,6 @@
 
 ## 5.23.0 (2026-04-23)
 
-> [!WARNING]
-> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
-
 ### Features
 
 - Improved the performance of the [`getDataFile()`](getDataFile) method. It now returns a cached [`DataFile`](DataFile) instance that is refreshed whenever the SDK configuration is updated.
@@ -89,9 +91,6 @@
   - @kameleoon/javascript-sdk-core@5.22.0
 
 ## 5.22.0 (2026-03-23)
-
-> [!WARNING]
-> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Features
 
@@ -113,9 +112,6 @@
 
 ## 5.21.0 (2026-03-19)
 
-> [!WARNING]
-> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
-
 ### Features
 
 - Introduced a new [`refreshDataFileIfStale()`][refreshDataFileIfStale] method to refresh the SDK configuration (data file) only when it becomes stale.
@@ -132,9 +128,6 @@
 
 ## 5.20.0 (2026-03-04)
 
-> [!WARNING]
-> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
-
 ### Features
 
 - Introduced a new [`flushInstant`][flush] method — an asynchronous version of `flush` that returns `Promise<void>` and can be awaited:
@@ -147,9 +140,6 @@
   - @kameleoon/javascript-sdk-core@5.19.0
 
 ## 5.19.0 (2026-02-13)
-
-> [!WARNING]
-> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Features
 
@@ -164,9 +154,6 @@
   - @kameleoon/javascript-sdk-core@5.18.0
 
 ## 5.18.2 (2026-02-09)
-
-> [!WARNING]
-> If you're upgrading from a version earlier than 5.14.0 and run into any unexpected build or SDK-related issues, please reach out to the Kameleoon Support Team. We're here to ensure your transition is smooth and will promptly address any concerns.
 
 ### Patch Changes
 
